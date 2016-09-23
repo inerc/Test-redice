@@ -11,26 +11,21 @@ export default {
         path: '/',
         publicPath: '/'
     },
-
     plugins: [
         new webpack.NoErrorsPlugin(),
-        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin()
     ],
-
     module: {
         loaders: [
             {
                 test: /\.js$/,
                 include: path.join(__dirname, 'client'),
-                loaders: ['react-hot',  'babel']
+                loaders: [ 'react-hot', 'babel' ]
             }
         ]
     },
-
     resolve: {
-        extensions: ['', '.js']
+        extentions: [ '', '.js' ]
     }
 }
-
-
