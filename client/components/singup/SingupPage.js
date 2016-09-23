@@ -3,10 +3,17 @@
  */
 import React from 'react';
 
+import SingupForm from './SingupForm';
+
 class SingupPage extends React.Component {
     render() {
         return (
-            <h1>SingupPage i here</h1>
+            <div className="row">
+                <div className="singup">
+                    <SingupForm />
+                </div>
+            </div>
+
         );
     }
 }
