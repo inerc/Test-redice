@@ -3,8 +3,15 @@
  */
 import React from 'react';
 
-export default ()=> {
-    return (
-        <h1>Hi!!</h1>
-    );
+class Greetings extends React.Component {
+    render(){
+        return (
+            <div className="jumpbutron">
+                <h1>Ho</h1>
+            </div>
+        );
+    }
+
 }
+
+export default Greetings;

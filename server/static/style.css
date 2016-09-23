@@ -1,0 +1,186 @@
+body {
+    font-family: 'ProximaNova-Regular', sans-serif !important;
+
+}
+
+.tabs--caption {
+    min-width: 1136px;
+    list-style: none;
+    height: 78px;
+    background-color: #1f367d;
+    border-bottom: solid 2px #fafafa;
+}
+
+.tabs--caption li {
+    color: #fff;
+    float: left;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 0.63;
+    cursor: pointer;
+}
+
+.tabs--caption .active {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0.63;
+    color: #1f367d;
+    float: left;
+    display: inline;
+    cursor: pointer;
+    background-color: #ffffff;
+    position: relative;
+}
+.tabs--caption .table--caption-login .active{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0.63;
+    color: #1f367d;
+    float: left;
+    display: inline;
+    cursor: pointer;
+    background-color: #1f367d !important;
+    position: relative;
+}
+
+.tabs--caption-home {
+    padding: 30px 29px 27px 15px !important;
+    border-right: solid 1px #2a4083;
+}
+
+.tabs--caption-home-icon {
+    vertical-align: middle;
+    width: 23px;
+    height: 17px;
+    /*background: url(../img/home-white.svg) no-repeat;*/
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 31px;
+    margin-right: 8px;
+}
+
+li:not(.active) .tabs--caption-home-icon {
+    vertical-align: middle;
+    width: 23px;
+    height: 17px;
+    /*background: url(../img/home-blue.svg) no-repeat;*/
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 31px;
+    margin-right: 8px;
+}
+
+.tabs--caption-sections {
+    padding: 30px 29px 30px 15px;
+    border-right: solid 1px #2a4083;
+}
+
+.tabs--caption-sections-icon {
+    vertical-align: middle;
+    width: 16px;
+    height: 14px;
+    /*background: url(../img/context-white.svg) no-repeat;*/
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 21px;
+    margin-right: 8px;
+}
+
+li.active .tabs--caption-sections-icon {
+    vertical-align: middle;
+    width: 16px;
+    height: 14px;
+    /*background: url(../img/context-blue.svg) no-repeat;*/
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 21px;
+    margin-right: 8px;
+}
+
+.tabs--caption-statistics {
+    padding: 30px 29px 25px 15px !important;
+    border-right: solid 1px #2a4083;
+}
+
+.tabs--caption-statistics-icon {
+    vertical-align: middle;
+    width: 20px;
+    height: 19px;
+    /*background: url(../img/prognoz-sm-white.svg) no-repeat;*/
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 23px;
+    margin-right: 8px;
+    background-size: 100%;
+    color: white;
+}
+
+li.active .tabs--caption-statistics-icon {
+    vertical-align: middle;
+    width: 20px;
+    height: 19px;
+    /*background: url(../img/prognoz-sm-blue.svg) no-repeat;*/
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 23px;
+    margin-right: 8px;
+    background-size: 100%;
+}
+
+.tabs--content {
+    display: none;
+    min-width: 1136px;
+    padding: 0 12px;
+
+}
+
+.tabs--content.active {
+    display: block;
+}
+
+.table--caption-login {
+    float: right !important;
+    margin-right: -9px;
+    margin-top: 22px;
+    width: 220px;
+    height: 30px;
+}
+
+.table--caption-login-name-avatar {
+    display: inline-block;
+    background-color: black;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    vertical-align: top;
+    margin-right: 11px;
+}
+
+.table--caption-login-name {
+    display: inline-block;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 12px;
+    line-height: 0.67;
+    color: #ffffff;
+    margin-bottom: 10px
+}
+.table--caption-login-name-username {
+    display: inline-block;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 12px;
+    line-height: 0.67;
+    color: #ffffff;
+    margin-bottom: 10px
+}
+
+.table--caption-login-mail {
+
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 12px;
+    line-height: 0.67;
+    color: #c5cce4;
+    margin-top: 4px;
+}

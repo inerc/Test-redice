@@ -1,3 +1,5 @@
+var ExctractTextPlugin = require('extract-text-webpack-plugin');
+
 import path from 'path'
 import webpack from 'webpack';
 
@@ -22,6 +24,11 @@ export default {
                 test: /\.js$/,
                 include: path.join(__dirname, 'client'),
                 loaders: [ 'react-hot', 'babel' ]
+            },
+
+            {
+                test: /\.css$/,
+                loader: 'style!css'
             }
         ]
     },
