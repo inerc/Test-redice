@@ -184,3 +184,84 @@ li.active .tabs--caption-statistics-icon {
     color: #c5cce4;
     margin-top: 4px;
 }
+
+.login {
+    width: 432px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-logo {
+    /* float: left; */
+    /* margin: 23px 0 0; */
+    /*background: url(/static/LoginForm/img/logo_new.png) no-repeat;*/
+    width: 164px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: 10px;
+    margin: 10px 0;
+    /* font-family: ProximaNova; */
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 0.67;
+    color: #2C4695;
+    text-transform: initial;
+}
+
+p.visualization {
+    color: #888e9f !important;
+    font-size: 12px !important;
+    letter-spacing: 5px;
+}
+
+.login form {
+    background: #fff;
+    border: 1px solid #d0dfe8;
+    box-sizing: border-box;
+    padding: 49px;
+    text-align: initial;
+    margin-top: 20px;
+}
+
+.login form span {
+    float: left;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+input[type=text], textarea, select, button, input[type=password] {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px 0 10px 43px;
+    border: 1px solid #d0dfe8;
+    color: #1f367d;
+}
+
+input[type=text], textarea, select, button, input[type=password] {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px 0 10px 43px;
+    border: 1px solid #d0dfe8;
+    color: #1f367d;
+}
+
+.login form span {
+    float: left;
+    font-size: 20px;
+    line-height: 25px;
+}
+.help-block{
+    color: red;
+    font-size: 10px;
+    font-size: 10px !important;
+    text-align: right;
+}
+
+.has-error {
+    color: red;
+}
