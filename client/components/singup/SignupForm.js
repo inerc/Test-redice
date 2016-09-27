@@ -5,6 +5,7 @@
 import React from 'react';
 import validateInput from '../../../server/shared/validations/signup';
 import TextFieldGroup from '../common/TextFieldGroup';
+import { browserHistory } from 'react-router';
 
 class SignupForm extends React.Component {
 
@@ -39,9 +40,11 @@ class SignupForm extends React.Component {
         e.preventDefault();
 
         if (this.isValid()){
-        this.setState({ errors: {}, isLoading: true})
+        this.setState({ errors: {}, isLoading: true});
         this.props.userSignupRequest(this.state).then(
-            () => {},
+            () => {
+                browserHistory.push('/');
+            },
             (err) => this.setState({ errors: err.response.data, isLoading: false })
             );
         }

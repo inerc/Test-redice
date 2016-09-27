@@ -12,10 +12,10 @@ export default function validateInput(data) {
     if (Validator.isNull(data.username)){
         errors.username = 'Email is required';
     }
-
-    if (!Validator.isEmail(data.username)){
-        errors.username = 'Email is invalid';
-    }
+    //
+    // if (!Validator.isString(data.username)){
+    //     errors.username = 'Email is invalid';
+    // }
 
     if (Validator.isNull(data.password)){
         errors.password = 'Password is required';
