@@ -3,31 +3,11 @@
  */
 
 import express from 'express';
-import Validator from 'validator';
-import isEmpty from 'lodash/isEmpty';
+import validateInput from '../shared/validations/signup';
 
 let router  = express.Router();
 
-function validateInput(data) {
-    let errors ={};
 
-    if (Validator.isNull(data.username)){
-        errors.username = 'Email is required';
-    }
-
-    if (!Validator.isEmail(data.username)){
-        errors.username = 'Email is invalid';
-    }
-
-    if (Validator.isNull(data.password)){
-        errors.password = 'Password is required';
-    }
-
-    return {
-        errors,
-        isValid: isEmpty(errors)
-    }
-}
 
 router.post('/', (req, res) =>{
     const {errors, isValid} =  validateInput(req.body);

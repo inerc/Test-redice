@@ -3,7 +3,8 @@
  */
 
 import React from 'react';
-import classnames from 'classnames'
+import validateInput from '../../../server/shared/validations/signup';
+import TextFieldGroup from '../common/TextFieldGroup';
 
 class SignupForm extends React.Component {
 
@@ -24,14 +25,26 @@ class SignupForm extends React.Component {
         this.setState({ [e.target.name]: e.target.value})
     }
 
+    isValid() {
+        const {errors, isValid} = validateInput(this.state);
+
+        if (!isValid){
+            this.setState({ errors });
+        }
+
+        return isValid;
+    }
+
     onSubmit(e) {
-        this.setState({ errors: {} });
         e.preventDefault();
+
+        if (this.isValid()){
         this.setState({ errors: {}, isLoading: true})
         this.props.userSignupRequest(this.state).then(
             () => {},
             (err) => this.setState({ errors: err.response.data, isLoading: false })
-        );
+            );
+        }
     }
 
     render() {
@@ -43,30 +56,22 @@ class SignupForm extends React.Component {
             <form  onSubmit={this.onSubmit}>
                 <h1>Join our community</h1>
 
-                <div className={classnames("from-group", { 'has-error': errors.username })}>
-                    {errors.username && <span className="help-block">{errors.username}</span>}
-                    <label className="control-lable">Username</label>
-                    <input
+                <TextFieldGroup
+                        errors={ errors.username }
+                        label= "Username"
                         value={this.state.username}
                         onChange={this.onChange}
-                        type="text"
-                        name="username"
-                        className="loginIcon"
+                        field="username"
 
-                    />
-                </div>
-                <div className={classnames("from-group", { 'has-error': errors.username })}>
-                    {errors.password && <span className="help-block">{errors.password}</span>}
-                    <label className="control-lable">Password</label>
-                    <input
-                        value={this.state.password}
-                        onChange={this.onChange}
-                        type="password"
-                        name="password"
-                        className="loginIcon"
-                    />
-
-                </div>
+                />
+                <TextFieldGroup
+                    errors= { errors.password }
+                    label= "Password"
+                    value= {this.state.password}
+                    onChange= {this.onChange}
+                    field="password"
+                    type="password"
+                />
 
                 <div className="form-group">
                     <button disabled={this.state.isLoading} className="button">
