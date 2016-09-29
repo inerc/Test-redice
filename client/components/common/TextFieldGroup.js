@@ -5,7 +5,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-const TextFieldGroup = ({ field, label, value, type, errors, onChange, placeholder }) => {
+const TextFieldGroup = ({ field, value, type, errors, onChange, placeholder }) => {
     return (
         <div className={classnames("from-group", { 'has-error': errors })}>
             {errors && <span className="help-block">{errors}</span>}

@@ -23,19 +23,12 @@ class LoginPage extends React.Component {
     }
 }
 
-<<<<<<< HEAD:client/components/login/LoginPage.js
+
 LoginPage.propTypes = {
     userSignupRequest : React.PropTypes.func.isRequired
 }
 
 export default connect(null, {userSignupRequest})(LoginPage);
-=======
-SignupPage.propTypes = {
-    userSignupRequest : React.PropTypes.func.isRequired,
-    addFlasMessage: React.PropTypes.func.isRequired
-}
 
-export default connect(null, {userSignupRequest, addFlasMessage})(SignupPage);
->>>>>>> d1324554cdef38e6e5b5ad5034bd07e2b0cbdde2:client/components/singup/SignupPage.js
 
 
