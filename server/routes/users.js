@@ -3,7 +3,7 @@
  */
 
 import express from 'express';
-import validateInput from '../shared/validations/signup';
+import validateInput from '../shared/validations/login';
 
 let router  = express.Router();
 

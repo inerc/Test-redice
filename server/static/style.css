@@ -265,3 +265,408 @@ input[type=text], textarea, select, button, input[type=password] {
 .has-error {
     color: red;
 }
+
+.button {
+    background:#1f367d ;
+    color: #fff;
+}
+
+.tabs--caption {
+    min-width: 1136px;
+    list-style: none;
+    height: 78px;
+    background-color: #1f367d;
+    border-bottom: solid 2px #fafafa;
+}
+
+.tabs--caption li {
+    color: #fff;
+    float: left;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 0.63;
+    cursor: pointer;
+}
+
+.tabs--caption .active {
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0.63;
+    color: #1f367d;
+    float: left;
+    display: inline;
+    cursor: pointer;
+    background-color: #ffffff;
+    position: relative;
+}
+.tabs--caption .table--caption-login .active{
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0.63;
+    color: #1f367d;
+    float: left;
+    display: inline;
+    cursor: pointer;
+    background-color: #1f367d !important;
+    position: relative;
+}
+
+.tabs--caption-home {
+    padding: 30px 29px 27px 15px !important;
+    border-right: solid 1px #2a4083;
+}
+
+.tabs--caption-home-icon {
+    vertical-align: middle;
+    width: 23px;
+    height: 17px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 31px;
+    margin-right: 8px;
+}
+
+li:not(.active) .tabs--caption-home-icon {
+    vertical-align: middle;
+    width: 23px;
+    height: 17px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 31px;
+    margin-right: 8px;
+}
+
+.tabs--caption-sections {
+    padding: 30px 29px 30px 15px;
+    border-right: solid 1px #2a4083;
+}
+
+.tabs--caption-sections-icon {
+    vertical-align: middle;
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 21px;
+    margin-right: 8px;
+}
+
+li.active .tabs--caption-sections-icon {
+    vertical-align: middle;
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 21px;
+    margin-right: 8px;
+}
+
+.tabs--caption-statistics {
+    padding: 30px 29px 25px 15px !important;
+    border-right: solid 1px #2a4083;
+}
+
+.tabs--caption-statistics-icon {
+    vertical-align: middle;
+    width: 20px;
+    height: 19px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 23px;
+    margin-right: 8px;
+    background-size: 100%;
+}
+
+li.active .tabs--caption-statistics-icon {
+    vertical-align: middle;
+    width: 20px;
+    height: 19px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-left: 23px;
+    margin-right: 8px;
+    background-size: 100%;
+}
+
+.tabs--content {
+    display: none;
+    min-width: 1136px;
+    padding: 0 12px;
+
+}
+
+.tabs--content.active {
+    display: block;
+}
+
+.table--caption-login {
+    float: right !important;
+    margin-right: -9px;
+    margin-top: 22px;
+    width: 220px;
+    height: 30px;
+}
+
+.table--caption-login-name-avatar {
+    display: inline-block;
+    background-color: black;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    vertical-align: top;
+    margin-right: 11px;
+}
+
+.table--caption-login-name {
+    display: inline-block;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 12px;
+    line-height: 0.67;
+    color: #ffffff;
+    margin-bottom: 10px
+}
+.table--caption-login-name-username {
+    display: inline-block;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 12px;
+    line-height: 0.67;
+    color: #ffffff;
+    margin-bottom: 10px
+}
+
+.table--caption-login-mail {
+
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 12px;
+    line-height: 0.67;
+    color: #c5cce4;
+    margin-top: 4px;
+}
+
+.tabs--content-projectcosts {
+    /* width: 100%; */
+    background-color: #ffffff;
+    width: 100%;
+    margin-left: 31px;
+}
+
+.tabs--content-projectcosts-text {
+    display: inline-block;
+    position: relative;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1;
+    color: #000000;
+    padding-top: 24px;
+    white-space: normal;
+    margin-bottom: 19px;
+}
+
+.tabs--content-projectcosts-instructions-container {
+    display: inline-block;
+    float: right;
+    margin-top: 16px;
+    margin-right: 63px;
+}
+
+.tabs--content-projectcosts-instructions-btn {
+    vertical-align: middle;
+    padding: 17px;
+    width: 13px;
+    height: 15px;
+    border-radius: 50%;
+    background-position: center;
+    border: solid 1px #e0e4f1;
+    margin-bottom: 58px;
+}
+
+.tabs--content-projectcosts-instructions {
+    display: inline-block;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.43;
+    color: #1f367d;
+    white-space: pre-wrap;
+    margin-left: -74px;
+}
+
+.tabs--content-projectcosts-enters {
+    display: inline-block;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 0.67;
+    color: #c9ccd7;
+}
+
+.tabs--content-projectcosts-enters-kemerev {
+    display: inline-block;
+    color: #1f367d;
+    margin-right: 20px;
+}
+
+.tabs--content-save-data {
+    margin-right: 31px;
+    display: inline-block;
+    margin-bottom: 17px;
+    width: 95.9%;
+    background-color: #78ce90;
+    padding-top: 16px;
+    padding-bottom: 18px;
+    padding-left: 16px;
+    font-family: 'ProximaNova-Regular', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 0.64;
+    color: #ffffff;
+}
+
+.tabs--content-background {
+    background: #f5f8fa;
+    padding-top: 16px;
+    padding-left: 5px;
+    min-width: 1131px;
+}
+
+.tabs--content-buttons-left {
+    display: inline-block;
+    margin-left: 26px;
+}
+
+.tabs--content-buttons-save {
+    padding: 11px 17px 10px 7.1px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 0.64;
+    color: #000000;
+    border: solid 1px #e0e4f1;
+    margin-right: 8px;
+}
+
+.tabs--content-buttons-save-img {
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 4px;
+    margin-right: -3px;
+    vertical-align: middle;
+}
+
+.tabs--content-buttons-sent {
+    padding: 11px 19px 10px 10.1px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 0.64;
+    color: #000000;
+    border: solid 1px #e0e4f1;
+    margin-right: 8px;
+}
+
+.tabs--content-buttons-sent-img {
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 4px;
+    margin-right: -3px;
+    vertical-align: middle;
+}
+
+.tabs--content-buttons-return {
+    padding: 11px 18px 10px 11.1px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 0.64;
+    color: #000000;
+    border: solid 1px #e0e4f1;
+}
+
+.tabs--content-buttons-return-img {
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 4px;
+    margin-right: -3px;
+    vertical-align: middle;
+}
+
+.tabs--content-buttons-right {
+    float: right;
+    margin-right: 31px;
+}
+
+.tabs--content-buttons-restore {
+    padding: 11px 13px 12px 0.1px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 0.64;
+    color: #000000;
+    border: solid 1px #e0e4f1;
+}
+
+.tabs--content-buttons-restore-img {
+    width: 16px;
+    height: 17px;
+    display: inline-block;
+    margin-top: 1px;
+    margin-left: 14px;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+
+.tabs--content-buttons-collapse-expande {
+    padding: 10px 18px 12px 10.1px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 0.64;
+    color: #000000;
+    border: solid 1px #e0e4f1;
+}
+
+.tabs--content-buttons-collapse-img {
+    width: 12px;
+    height: 7px;
+    display: inline-block;
+    margin-top: -11px;
+    margin-left: 3px;
+    margin-right: 0px;
+    vertical-align: middle;
+    background-size: 100%;
+}
+
+.tabs--content-buttons-expande-img {
+    width: 12px;
+    height: 7px;
+    display: inline-block;
+    margin-top: 11px;
+    margin-left: -16px;
+    margin-right: 4px;
+    vertical-align: middle;
+    background-size: 100%;
+}
+
+.tabs--content-buttons-excel {
+    padding: 10px 19px 12px 11.1px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 0.64;
+    color: #000000;
+    border: solid 1px #e0e4f1;
+}
+
+.tabs--content-buttons-excel-img {
+    width: 18px;
+    height: 17px;
+    display: inline-block;
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-right: 7px;
+    vertical-align: middle;
+}

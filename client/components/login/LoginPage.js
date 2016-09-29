@@ -2,17 +2,17 @@
  * Created by inerc on 23.09.16.
  */
 import React from 'react';
-import SignupForm from './SignupForm';
+import LoginForm from './LoginForm';
 import { connect } from 'react-redux';
 import { userSignupRequest } from '../../actions/SignupActions';
 
-class SignupPage extends React.Component {
+class LoginPage extends React.Component {
     render() {
         const  { userSignupRequest } = this.props;
         return (
             <div className="row">
                 <div className="Signup">
-                    <SignupForm userSignupRequest={ userSignupRequest } />
+                    <LoginForm userSignupRequest={ userSignupRequest } />
                 </div>
             </div>
 
@@ -20,10 +20,10 @@ class SignupPage extends React.Component {
     }
 }
 
-SignupPage.propTypes = {
+LoginPage.propTypes = {
     userSignupRequest : React.PropTypes.func.isRequired
 }
 
-export default connect(null, {userSignupRequest})(SignupPage);
+export default connect(null, {userSignupRequest})(LoginPage);
 
 

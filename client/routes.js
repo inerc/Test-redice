@@ -2,12 +2,12 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
-import Greetings from './components/Greetings';
-import SingupPage from './components/singup/SignupPage';
+import LoginPage from './components/login/LoginPage';
+import NavigationBar from  './components/NavigationBar';
 
 export default (
     <Route path="/" component={App} >
-        <IndexRoute component={ Greetings } />
-        <Route path="singup" components={SingupPage} />
+        <IndexRoute component={ NavigationBar } />
+        <Route path="login" components={LoginPage} />
     </Route>
 )

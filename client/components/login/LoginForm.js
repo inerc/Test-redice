@@ -3,11 +3,11 @@
  */
 
 import React from 'react';
-import validateInput from '../../../server/shared/validations/signup';
+import validateInput from '../../../server/shared/validations/login';
 import TextFieldGroup from '../common/TextFieldGroup';
 import { browserHistory } from 'react-router';
 
-class SignupForm extends React.Component {
+class LoginForm extends React.Component {
 
     constructor (props) {
         super(props);
@@ -57,23 +57,23 @@ class SignupForm extends React.Component {
             <p className="header-logo"></p>
             <p className="visualization">VISUALIZATION</p>
             <form  onSubmit={this.onSubmit}>
-                <h1>Join our community</h1>
+                <h1>Вход в систему</h1>
 
                 <TextFieldGroup
                         errors={ errors.username }
-                        label= "Username"
                         value={this.state.username}
                         onChange={this.onChange}
                         field="username"
+                        placeholder = "Логин"
 
                 />
                 <TextFieldGroup
                     errors= { errors.password }
-                    label= "Password"
                     value= {this.state.password}
                     onChange= {this.onChange}
                     field="password"
                     type="password"
+                    placeholder = "Пароль"
                 />
 
                 <div className="form-group">
@@ -88,12 +88,12 @@ class SignupForm extends React.Component {
     }
 }
 
-SignupForm.PropTypes = {
+LoginForm.PropTypes = {
     userSignupRequest: React.PropTypes.func.isRequired
 }
 
-SignupForm.contextTypes = {
+LoginForm.contextTypes = {
     router: React.PropTypes.object.isRequired
 }
 
-export default SignupForm
+export default LoginForm

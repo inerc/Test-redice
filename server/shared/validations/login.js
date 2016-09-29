@@ -10,7 +10,7 @@ export default function validateInput(data) {
     let errors ={};
 
     if (Validator.isNull(data.username)){
-        errors.username = 'Email is required';
+        errors.username = 'Введите логин';
     }
     //
     // if (!Validator.isString(data.username)){
@@ -18,7 +18,7 @@ export default function validateInput(data) {
     // }
 
     if (Validator.isNull(data.password)){
-        errors.password = 'Password is required';
+        errors.password = 'Введите пароль';
     }
 
     return {
