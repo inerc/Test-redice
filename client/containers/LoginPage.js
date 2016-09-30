@@ -2,8 +2,8 @@
  * Created by inerc on 23.09.16.
  */
 import React from 'react';
-import Form from '../components/Form/Form';
-import Field from '../components/Form/Field';
+import Form from '../components/Login/Form';
+import Field from '../components/Login/Field';
 import { connect } from 'react-redux';
 
 class LoginPage extends React.Component {
