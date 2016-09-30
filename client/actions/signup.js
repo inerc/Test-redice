@@ -18,6 +18,24 @@ import axios from 'axios';
 //     }
 // }
 
+export const USER_REQUEST = 'USER_REQUEST';
+export const USER_SUCCESS = 'USER_SUCCESS';
+
+export const userRequest = (login, password) => {
+    return {
+        type: USER_REQUEST,
+        login,
+        password
+    };
+};
+
+export const userSuccess = (payload) => {
+    return {
+        type: USER_SUCCESS,
+        payload
+    };
+};
+
 export function userSignupRequest (userData) {
     return dispatch => {
         return axios.post('/api/users', userData);

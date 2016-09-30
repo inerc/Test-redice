@@ -5,11 +5,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, browserHistory } from 'react-router';
-import '../server/static/style.css';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose } from 'redux';
-import rootReducer from './rootReducer'
+import rootReducer from './reducers/rootReducer'
 
 import routes from './routes';
 
