@@ -5,7 +5,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 import InfoBar from './InfoBar';
-import ButtonBar from './ButtonBar';
+
+import ButtonBar from './ButtonBar'
+
 
 export default () => {
     return (
@@ -20,7 +22,10 @@ export default () => {
                 {/*<li className="tabs--caption-statistics">*/}
                     {/*<Link to="/" className="tabs--caption-statistics-icon">Red_Dice</Link></li>*/}
                 <li className="tabs--caption-statistics">
-                    <Link to="/users" className="tabs--caption-statistics-icon">Users</Link></li>
+                    <Link to="/" className="tabs--caption-statistics-icon">Red_Dice</Link></li>
+                <li className="tabs--caption-statistics">
+                    <Link to="/login" className="tabs--caption-statistics-icon">Login</Link></li>
+
                 <li className="table--caption-login">
                     <div className="table--caption-login-name-avatar"></div>
                     <div className="table--caption-login-name">
@@ -31,7 +36,7 @@ export default () => {
             </ul>
             <InfoBar/>
             <ButtonBar/>
-
         </div>
     );
 }
+

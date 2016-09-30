@@ -1,5 +1,5 @@
-/**
- * Created by inerc on 30.09.16.
+/*
+ * Created by inerc on 29.09.16.
  */
 import React from 'react';
 
@@ -26,7 +26,7 @@ class infoBar extends React.Component {
                         Инструкция по расчету проекта расходов
                     </div>
                 </div>
-                <div className="tabs--content-save-data">Вы авторизированны, добро пожаловать</div>
+                <div className="tabs--content-save-data">Данные сохранены. Восстановить прежние значения</div>
             </div>
 
         );

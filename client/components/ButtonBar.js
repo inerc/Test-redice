@@ -1,4 +1,5 @@
 /**
+<<<<<<< HEAD
  * Created by inerc on 30.09.16.
  */
 
@@ -33,6 +34,7 @@ class buttonBar extends React.Component {
                         <div className="tabs--content-buttons-excel-img"></div> Excel</button>
                 </div>
                 <div className="delimiter--line"></div>
+
             </div>
         );
     }

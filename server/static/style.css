@@ -53,7 +53,7 @@ body {
 
 .tabs--caption-home-icon {
     vertical-align: middle;
-    width: 23px;
+    width: 60px;
     height: 17px;
     /*background: url(../img/home-white.svg) no-repeat;*/
     display: inline-block;
@@ -66,7 +66,7 @@ li:not(.active) .tabs--caption-home-icon {
     vertical-align: middle;
     width: 23px;
     height: 17px;
-    /*background: url(../img/home-blue.svg) no-repeat;*/
+    background: url(../img/home-blue.svg) no-repeat;
     display: inline-block;
     margin-bottom: 4px;
     margin-left: 31px;
@@ -267,8 +267,10 @@ input[type=text], textarea, select, button, input[type=password] {
 }
 
 .button {
-    background: #1f367d;
-    color: #ffffff;
+
+    background:#1f367d ;
+    color: #fff;
+
 }
 
 .tabs--caption {
@@ -464,6 +466,8 @@ li.active .tabs--caption-statistics-icon {
     padding-top: 24px;
     white-space: normal;
     margin-bottom: 19px;
+
+
 }
 
 .tabs--content-projectcosts-instructions-container {
@@ -510,6 +514,7 @@ li.active .tabs--caption-statistics-icon {
     margin-right: 20px;
 }
 
+
 .tabs--content-save-data {
     margin-right: 31px;
     display: inline-block;
@@ -537,6 +542,7 @@ li.active .tabs--caption-statistics-icon {
     display: inline-block;
     margin-left: 26px;
 }
+
 
 .tabs--content-buttons-save {
     padding: 11px 17px 10px 7.1px;
@@ -669,4 +675,6 @@ li.active .tabs--caption-statistics-icon {
     margin-left: 5px;
     margin-right: 7px;
     vertical-align: middle;
+
 }
+
