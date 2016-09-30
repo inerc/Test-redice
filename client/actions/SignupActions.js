@@ -24,3 +24,14 @@ export function userSignupRequest (userData) {
 
     }
 }
+
+
+
+export function getUsers (userData) {
+
+    return dispatch => {
+        return axios.get('http://62.76.25.114:90/v1/users', userData);
+        console.log(userData);
+    }
+
+}

@@ -57,28 +57,28 @@ class SignupForm extends React.Component {
             <p className="header-logo"></p>
             <p className="visualization">VISUALIZATION</p>
             <form  onSubmit={this.onSubmit}>
-                <h1>Join our community</h1>
+                <h1>Войти в систему</h1>
 
                 <TextFieldGroup
                         errors={ errors.username }
-                        label= "Username"
                         value={this.state.username}
                         onChange={this.onChange}
+                        placeholder="Логин"
                         field="username"
 
                 />
                 <TextFieldGroup
                     errors= { errors.password }
-                    label= "Password"
                     value= {this.state.password}
                     onChange= {this.onChange}
+                    placeholder="Пароль"
                     field="password"
                     type="password"
                 />
 
                 <div className="form-group">
                     <button disabled={this.state.isLoading} className="button">
-                        Sing Up
+                        Войти
                     </button>
                 </div>
 
