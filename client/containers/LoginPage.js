@@ -12,9 +12,9 @@ class LoginPage extends React.Component {
         return (
             <div className="row">
                 <div className="Signup">
-
                     <Form onSubmit={ userSignupRequest }>
                         <Field
+                            info = "Вход в систему"
                             errors={ errors.username }
                             name="username"
                             placeholder = "Логин"

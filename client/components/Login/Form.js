@@ -24,13 +24,12 @@ class Form extends React.Component {
             <p className="header-logo"></p>
             <p className="visualization">VISUALIZATION</p>
             <form  onSubmit={(e) => { this.onSubmit(e) }}>
-                <h1>Вход в систему</h1>
 
                 {children}
 
                 <div className="form-group">
                     <button className="button">
-                        Sing Up
+                        Login
                     </button>
                 </div>
 
