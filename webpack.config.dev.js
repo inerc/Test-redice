@@ -31,11 +31,11 @@ export default {
 
             {
                 test: /\.less$/,
-                loader: 'style!css!less!img'
+                loader: 'style!css!less'
             },
             {
                 test: /\.(png|jpg|svg)$/,
-                loaders: ['url', 'image-webpack']
+                loaders: ['url']
             }
         ]
     },

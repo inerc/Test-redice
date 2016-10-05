@@ -8,16 +8,24 @@ class Input extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.state = {
+            value: ''
+        }
     }
 
     onChange(e) {
-        this.setState({ [e.target.name]: e.target.value})
+        this.setState({ value: e.target.value})
     }
 
     render () {
         const { type } = this.props;
 
-        return <input type={type} onChange={(e) => { this.onChange(e) }}/>
+        return <input type={type}
+                      value={this.state.value}
+                      onChange={(e) => { this.onChange(e) }}
+                      name={this.props.name}
+                />
     }
 
 }

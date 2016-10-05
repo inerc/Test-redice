@@ -11,9 +11,22 @@ class Form extends React.Component {
         super(props);
     }
 
+    getData (form) {
+        let elements = form.elements;
+        let data = {};
+
+        Object.keys(elements).forEach((key) => {
+            let element = elements[key];
+
+            data[element.name] = element.value;
+        });
+
+        return data;
+    }
+
 
     render() {
-        let { children } = this.props;
+        let { children, onSubmit = () => {} } = this.props;
 
         if (!Array.isArray(children)) {
             children = [children];
@@ -23,7 +36,7 @@ class Form extends React.Component {
             <div className="login">
             <p className="header-logo"></p>
             <p className="visualization">VISUALIZATION</p>
-            <form  onSubmit={(e) => { this.onSubmit(e) }}>
+            <form  onSubmit={(e) => { e.preventDefault(); onSubmit(this.getData(e.target)) }}>
 
                 {children}
 

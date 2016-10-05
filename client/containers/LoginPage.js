@@ -5,18 +5,19 @@ import React from 'react';
 import Form from '../components/Login/Form';
 import Field from '../components/Login/Field';
 import { connect } from 'react-redux';
+import { authRequest } from '../actions/auth';
 
 class LoginPage extends React.Component {
     render() {
-        const  { userSignupRequest, addFlashMessage, errors = {} } = this.props;
+        const  { authRequest, errors = {} } = this.props;
         return (
             <div className="row">
                 <div className="Signup">
-                    <Form onSubmit={ userSignupRequest }>
+                    <Form onSubmit={ authRequest }>
                         <Field
                             info = "Вход в систему"
                             errors={ errors.username }
-                            name="username"
+                            name="login"
                             placeholder = "Логин"
 
                         />
@@ -44,7 +45,7 @@ const mapStateToProps = (state) => {
     return {};
 };
 
-export default connect(mapStateToProps, { userSignupRequest: () => {}, addFlashMessage: () => {} })(LoginPage);
+export default connect(mapStateToProps, { userSignupRequest: () => {}, authRequest })(LoginPage);
 
 
 

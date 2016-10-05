@@ -1,13 +1,40 @@
-import { put, take, call } from 'redux-saga/effects';
-import {USER_REQUEST, userSuccess} from '../actions/signup';
-function* rootSaga() {
-    let data = yield take(USER_REQUEST);
-    result = yield call(
-        fetch('http://62.76.25.114:90/v1/login?login=misha&password=123123123')
-            .then(response => {
-                return response.json();
-            })
-    );
+import { put, take, call, fork } from 'redux-saga/effects';
+import {USER_REQUEST, userSuccess, userFailure} from '../actions/auth';
 
-    yield put(userSuccess(result));
+
+export function* rootSaga() {
+    yield [
+        fork(fetchAuth)
+    ];
+}
+
+function fetchApi(data) {
+    return fetch(`/api/auth`, {method: 'POST', body: JSON.stringify(data), headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    }})
+        .then((response) => {
+            if (response.status !== 200) {
+                throw new Error('error!');
+            }
+
+            return response.json();
+        })
+        .catch(response => {
+            return {error: response}
+        });
+}
+
+function* fetchAuth() {
+    while (true) {
+        let data = yield take(USER_REQUEST);
+
+        let result = yield call(fetchApi, data);
+
+        if (result.error) {
+            yield put(userFailure(result));
+        } else {
+            yield put(userSuccess(result));
+        }
+    }
 }

@@ -20,8 +20,9 @@ import axios from 'axios';
 
 export const USER_REQUEST = 'USER_REQUEST';
 export const USER_SUCCESS = 'USER_SUCCESS';
+export const USER_FAILURE = 'USER_FAILURE';
 
-export const userRequest = (login, password) => {
+export const authRequest = ({login, password}) => {
     return {
         type: USER_REQUEST,
         login,
@@ -35,6 +36,14 @@ export const userSuccess = (payload) => {
         payload
     };
 };
+
+export const userFailure = (payload) => {
+    return {
+        type: USER_FAILURE,
+        payload
+    };
+};
+
 
 export function userSignupRequest (userData) {
     return dispatch => {
