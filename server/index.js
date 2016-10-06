@@ -57,22 +57,6 @@ app.post('/api/auth', (req, res, next) => {
     ));
 
 
-  // req.pipe(request({
-  //       // will be ignored
-  //       method: 'GET',
-  //       uri: 'http://62.76.25.114:90/v1/login?login=${login}&password=${password}',
-  //
-  //       har: {
-  //
-  //           headers: [
-  //               {
-  //                   api_key: 'olnjascdo02w3iejADFASFnd2k3j22',
-  //               }
-  //           ],
-  //
-  //       }
-  //   }).pipe(res));
-
 });
 
 app.get('/*', (req, res) => {
