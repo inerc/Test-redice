@@ -9,7 +9,6 @@ const Field = ({ name, info, type, errors, placeholder }) => {
     return (
 
         <div className={'from-group'}>
-            <h1>{ info }</h1>
             {errors && <span className="help-block">{errors}</span>}
             <Input
                 type={ type }

@@ -1,23 +1,24 @@
+@color-cloudy: #1f367d;
+@font-color: #fff;
+
+
 body {
   background: #f5f8fa;
 }
-
 .login {
-  width: 432px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 20%;
 }
 
 .header-logo {
-  /* float: left; */
-  /* margin: 23px 0 0; */
+
   background: url(http://62.76.25.114:7780/static/LoginForm/img/logo_new.png) no-repeat;
   width: 164px;
   height: 22px;
   margin: 0 auto;
 }
-
-.p.visualization {
+p.visualization {
   color: #888e9f !important;
   font-size: 12px !important;
   letter-spacing: 5px;
@@ -26,18 +27,56 @@ body {
   background: #fff;
   border: 1px solid #d0dfe8;
   box-sizing: border-box;
-  padding: 49px;
   text-align: initial;
-  margin-top: 20px;
+
 }
 
-.login form span {
-  float: left;
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.btn-cloudy{
+  background:@color-cloudy;
+  padding: 2% 32.5%;
+  border: none;
+  color: #fff;
+  display: block;
+  margin: 5% auto;
+
+}
+
+input[type=text], input[type=password] {
+  box-sizing: border-box;
+  width: 73% !important;
+  padding: 2% !important;
+  border: 1px solid #d0dfe8;
+  color: #1f367d;
+  margin: 3% 1% 0% 13% !important;
+}
+
+.from-group h1{
   font-size: 20px;
   line-height: 25px;
+  margin-left: 10px;
 }
 
-.login form {
-  float: right;
-  margin-bottom: 15px;
+.forgot-password{
+  padding-top: 4%;
 }
+.member-login{
+  font-size: 20px;
+  line-height: 25px;
+  padding: 7% 0 6% 15.2%;
+}
+
+
+
+input[type=checkbox], input[type=radio] {
+  margin: 4px 10px 0 0 !important;
+  margin-top: 1px\9;
+  line-height: normal;
+}
+
