@@ -4,6 +4,7 @@
 
 import React from 'react';
 import {} from './Login.less';
+import { Link } from 'react-router';
 
 class Form extends React.Component {
 
@@ -62,7 +63,7 @@ class Form extends React.Component {
                                         </div>
                                         <div className="col-md-12 col-xs-12">
                                             <div className=" forgot-password-text text-center ">
-                                                <a href="mailto:mail@test.ru">Забыли пароль?</a>
+                                                <Link  to="/reset">Забыли пароль?</Link>
                                             </div>
                                         </div>
                                     </div>
